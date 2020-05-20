@@ -14,7 +14,7 @@ overflow-x: hidden;
 
 .navbar{
     background: black;
-        border-bottom: 1px solid gold;
+        border-bottom: 1px solid #ffc107;
         padding: 0px;
 }
 
@@ -26,9 +26,18 @@ overflow-x: hidden;
     left: 15vh;
 }   
 
+.navbar .fa-bitcoin{
+    color: #ffc107;
+    transform: rotate(0deg);
+    font-size: 80%;
+}
 .nav-link{
     color: white !important;
     font-size: 100%;
+    
+}
+.nav-link:hover{
+    color: #ffc107 !important;
     
 }
 .nav-item{
@@ -42,7 +51,7 @@ overflow-x: hidden;
 
 .nav-item:hover{
     border-radius: 4px;
-    border: 1px solid #424141;
+    border: 1px solid #ffc107;
 }
 
 .s1{
@@ -58,7 +67,7 @@ overflow-x: hidden;
 }
 
 .s1-inner{
-    width: 50%;
+    width: 60%;
 }
 
 .inner-title{
@@ -75,25 +84,25 @@ overflow-x: hidden;
     color: white !important;
     font-family: sans-serif;
     width: 100%;
-    font-style: oblique;
+    text-shadow: 2px 2px 1px black;
 }
 .get-started{
     color: black;
-    background: #ffd700;
+    background: #ffc107;
     width: 30vh;
     height: 6.5vh;
     border: none;
 }
 .get-started-top{
     color: black;
-    background: #ffd700;
+    background: #ffc107;
     /* width: 30vh; */
     /* height: 6.5vh; */
     border: none;
 }
 
 .get-started:hover, .get-started-top:hover{
-    background: linear-gradient(to right, gold, black);
+    background: linear-gradient(to right, #ffc107, black);
 }
 /* .s2-super{
     
@@ -112,7 +121,7 @@ overflow-x: hidden;
     padding: 2px;
     width: 7vh;
     margin-bottom: 0px;
-    background: linear-gradient(to left, gold, black);
+    background: linear-gradient(to left, #ffc107, black);
 }
 
 .s2-title{
@@ -120,7 +129,7 @@ overflow-x: hidden;
     font-size: 300%;
 }
 .strip{
-    color: gold!important;
+    color: #ffc107!important;
     font-weight: bold;
 }
 .s2-texts{
@@ -158,8 +167,9 @@ overflow-x: hidden;
     padding: 2.5vh;
 }
 
+
 .work-flex-title{
-    color: #3d558f;
+    color: white;
     font-size: 110%;
     font-weight: bold;
     margin-top: 5px;
@@ -199,6 +209,13 @@ overflow-x: hidden;
     /* border: 1px solid red; */
     /* padding: 0px; */
     margin-bottom: 0px;
+}
+
+.flexers-title{
+    color: white;
+    font-family: sans-serif;
+    font-size: 150%;
+    font-weight: bold;
 }
 
 .flexers-title{
@@ -280,17 +297,368 @@ animation: shake 1s ease-out 0s infinite;
 }
 
 .flexers-img-con .fa, .flexers-img-con .fab{
-    color: gold;
+    color: #ffc107;
 font-size: 1000%;
 }
 
 
+/* invest */
+
+
+.s2-trade{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.invest-s1{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invest-s1 hr{
+    padding: 2px;
+    width: 12vh;
+    background: linear-gradient(to left, #3a2b8f,#5353d3, #17a0b3);
+}
+
+.invest-s1-title{
+    color: black;
+    font-size: 300%;
+}
+
+.invest-s1-texts{
+    font-size: 105%;
+    margin-bottom: -2px;
+}
+
+.work-flex{
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-flex-cons{
+    background: black !important;
+    margin: 0px 2vh 0px 2vh;
+    height:auto;
+    width: 40vh;
+    border: 2px solid #ffc107;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    /* animation: bounce 3.5s ease-out 0s infinite; */
+}
+
+
+@keyframes bounce {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(20px);
+    text-shadow: none; }
+    100% { transform: translateX(-10px) }
+}
+.icon-base{
+    /* border: 3px dotted black !important; */
+    border: 1px solid black;
+    background: transparent;
+    padding: 5vh;
+}
+
+.icon-base .fa-bitcoin{
+    color: #ffc107;
+    font-size: 600%;
+    animation: rotate 3.5s ease-out 0s infinite;
+}
+.work-flex-percent{
+    font-family: tahoma;
+    color: #ffc107;
+    font-size: 250%;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: -3px;
+}
+
+
+.work-flex-title{
+    color: white;
+    font-size: 140%;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: -3px;
+}
+
+.work-flex-text{
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+
+/* testimony */
+.testimony-super{
+    background: transparent;
+    border: 1px solid #ffc107;
+    padding: 15px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.testimony-con{
+    background: transparent !important;
+    width: 49%;
+    padding: 3px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.testimony-con .lead{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 12px;
+}
+
+.withdraw-con .lead{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 12px;
+}
+
+.testimony-con .list-group{
+    background: transparent !important;
+}
+
+.testimony-con .list-group-item{
+    color: white;
+    background: transparent !important;
+}
+
+.testimony-con .list-group-item .badge{
+    background: green !important;
+    font-size: 120%;
+}
+.withdraw-con{
+    border-left: 1px solid #ffc107;
+}
+
+.withdraw-list  .list-group-item .badge{
+    background: red !important;
+    font-size: 110%;
+}
+
+
+.talk-super{
+    background: transparent;
+    /* border-top: 1px dashed #ffc107; */
+    padding: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 0px;
+}
+
+.talk-super .lead{
+    font-size: 300%;
+}
+
+.talk-con{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin:0px;
+    margin-left: 5%;
+}
+
+.talk-con-inner{
+    background: transparent;
+    margin:0px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figures{
+font-size: 250%;
+margin:0px;
+}
+
+.figure-text{
+font-size: 140%;
+margin:0px;
+}
+
+
+.warn-super{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+.warn-super .warn-inner{
+    width: 50vh;
+    background: white;
+}
+
+.inst-higher{
+    
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+.inst-super{
+    width: 80%;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.inst-super .inst-cons{
+    width: 30%;
+    margin: 0;
+}
+
+ .inst-cons small{
+     font-size: 90%;
+}
+
+#wallie{
+    font-size: 85%;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
+
+.form-around{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.form-around-inner{
+    background:transparent;
+    border: 1px solid #ffc107;
+    width: 70%;
+}
+
+.form-around-inner label{
+    color: #ffc107;
+}
+
+
+@media screen and (max-width:1024px){
+
+.work-flex{
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.work-flex-cons{
+    margin: 0px 1vh 2vh 1vh;
+    width: 31%;
+}
+
+.icon-base{
+    padding: 0vh;
+}
+
+.icon-base .fa-bitcoin{
+    font-size: 500%;
+}
+.work-flex-percent{
+    font-size: 200%;
+}
+
+
+.work-flex-title{
+    font-size: 120%;
+}
+
+.work-flex-text{
+    width: 80%;
+}
+
+
+/* testimony */
+.testimony-super{
+    background: transparent;
+    border: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony-con{
+    background: transparent !important;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 30px;
+    border-radius: 0px;
+    border: 1px solid #ffc107;
+}
+
+
+.talk-super{
+    background: transparent;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.talk-super .lead{
+    font-size: 200%;
+}
+
+.talk-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin:0px;
+}
+
+.talk-con-inner{
+    background: transparent;
+    margin:0px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figures{
+font-size: 250%;
+margin:0px;
+}
+
+.figure-text{
+font-size: 140%;
+margin:0px;
+}
+
+}
 @media screen and (max-width:768px){
     .navbar-brand{
         left: 15px;
     }
 .navbar-toggler{
-    background: gold !important;
+    background: #ffc107 !important;
     margin-right: 2vh;
 }
 
@@ -307,19 +675,31 @@ font-size: 1000%;
     right: 2.2vh;
     top: 8.2vh;
     border-radius: 0%;
-    border: 1px solid gold;
-    /* box-shadow: 3px 3px 4px gold; */
+    border: 1px solid #ffc107;
+    /* box-shadow: 3px 3px 4px #ffc107; */
 }
 
 
     .s1{
         padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        /* border: 1px solid red; */
+        border-bottom: 1px solid lightgray;
+        background-size: 70%;
     }
     .s1-inner{
-    width: 60%;
+    width: 100%;
     /* border: 1px solid red; */
     left: 0px;
     position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
 
@@ -332,6 +712,11 @@ font-size: 1000%;
     font-size: 150%;
 }
 
+.inner-text{
+    text-align: center;
+    color: black;
+    text-shadow: 2px 1px 153px lightgray;
+}
 .flexers-text-con{
     text-align: center;
     width: 60%;
@@ -343,6 +728,53 @@ font-size: 1000%;
     width: 40%;
     /* border: 1px solid red; */
 }
+
+.work-flex{
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.work-flex-cons{
+    margin: 0px 0vh 2vh 0vh;
+    width: 47%;
+}
+
+.talk-super{
+    padding: 0px;
+}
+
+.talk-super .lead{
+    font-size: 200%;
+}
+
+.talk-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin:0px;
+}
+
+.talk-con-inner{
+    background: transparent;
+    margin:0px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figures{
+font-size: 250%;
+margin:0px;
+}
+
+.figure-text{
+font-size: 110%;
+margin:0px;
+}
+
 }
 
 
@@ -408,7 +840,7 @@ font-size: 1000%;
 }
 
 .flexers-img-con .fa, .flexers-img-con .fab{
-    color: gold;
+    color: #ffc107;
 font-size: 800%;
 }
 
@@ -445,6 +877,56 @@ font-size: 800%;
 
 }
 
+
+.work-flex{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.work-flex-cons{
+    margin: 0px 0vh 2vh 0vh;
+    width: 100%;
+}
+
+.talk-super{
+    padding: 0px;
+}
+
+.talk-super .lead{
+    font-size: 200%;
+}
+
+.talk-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin:0px;
+}
+
+.talk-con-inner{
+    background: transparent;
+    margin:0px;
+    width: 103%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figures{
+font-size: 180%;
+margin:0px;
+}
+
+.figure-text{
+font-size: 100%;
+margin:0px;
+}
 }
 
 @media screen and (max-width:375px){
@@ -465,6 +947,10 @@ font-size: 800%;
     text-shadow: 2px 1px 153px lightgray;
 }
 
+.get-started{
+    height: auto;
+}
+
 .s2-title{
     font-size: 200%;
 }
@@ -475,7 +961,7 @@ font-size: 800%;
 }
 
 .flexers-img-con .fa, .flexers-img-con .fab{
-    color: gold;
+    color: #ffc107;
 font-size: 800%;
 }
 
