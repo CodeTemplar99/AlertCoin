@@ -264,12 +264,12 @@ animation: rotate 3.5s ease-out 0s infinite;
 }
 
 .cam-box{
-animation: zoom 3s ease-out 0s infinite;
+animation: zoom 0.5s ease-out 0s infinite;
 }
 @keyframes zoom {
-    0% { font-size: 500%; }
-    50% { font-size: 1000%; }
-    100% { font-size: 500%; }
+    0% { color: inherit; }
+    50% { color:white; }
+    100% { color: #ffc107; }
 
 }
 
@@ -372,7 +372,7 @@ font-size: 1000%;
 .icon-base .fa-bitcoin{
     color: #ffc107;
     font-size: 600%;
-    animation: rotate 3.5s ease-out 0s infinite;
+    animation: rotate 5.5s ease-out 0s infinite;
 }
 .work-flex-percent{
     font-family: tahoma;
@@ -499,8 +499,8 @@ margin:0px;
 
 
 .warn-super{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     background: transparent;
 }
 
@@ -550,11 +550,17 @@ margin:0px;
 .form-around-inner{
     background:transparent;
     border: 1px solid #ffc107;
-    width: 70%;
+    width: 75%;
 }
 
 .form-around-inner label{
     color: #ffc107;
+}
+
+.form-around-inner .btn{
+    width: 40vh;
+    height: 50px;
+    font-weight: bold;
 }
 
 
@@ -650,6 +656,34 @@ margin:0px;
 .figure-text{
 font-size: 140%;
 margin:0px;
+}
+
+
+
+.inst-super{
+    width: 100%;
+    padding: 0px;
+}
+
+.inst-super .inst-cons{
+    width: 30%;
+    margin: 0;
+}
+
+ .inst-cons small{
+     font-size: 100%;
+}
+
+#wallie{
+    font-size: 95%;
+    background-color: white;
+}
+
+
+.form-around-inner{
+    background:transparent;
+    border: 1px solid #ffc107;
+    width: 100%;
 }
 
 }
@@ -870,12 +904,7 @@ font-size: 800%;
 .cam-box{
     margin-bottom: 10px;
 }
-@keyframes zoom {
-    0% { font-size: 300%; }
-    50% { font-size: 600%; }
-    100% { font-size: 300%; }
 
-}
 
 
 .work-flex{
@@ -889,6 +918,15 @@ font-size: 800%;
 .work-flex-cons{
     margin: 0px 0vh 2vh 0vh;
     width: 100%;
+}
+
+
+.testimony-con .list-group-item .badge{
+    font-size: 100%;
+}
+
+.withdraw-list  .list-group-item .badge{
+    font-size: 100%;
 }
 
 .talk-super{
@@ -926,6 +964,32 @@ margin:0px;
 .figure-text{
 font-size: 100%;
 margin:0px;
+}
+
+.inst-super{
+    flex-direction: column;
+    align-items: center;
+}
+
+.inst-super .inst-cons{
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+ .inst-cons small{
+     font-size: 100%;
+}
+
+#wallie{
+    font-size: 95%;
+    background-color: white;
+}
+
+
+.form-around-inner{
+    background:transparent;
+    border: 1px solid #ffc107;
+    width: 100%;
 }
 }
 
@@ -977,5 +1041,18 @@ font-size: 800%;
     height: 40vh;
     width: 50%;
     /* border: 1px solid red; */
+}
+.warn-super .warn-inner{
+    width: 100%;
+}
+
+.inst-super .inst-cons{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-around-inner .btn{
+    width: 100%;
+    height: auto;
 }
 }
