@@ -10,7 +10,6 @@ function showSideBar() {
 
 }
 
-
 setInterval(() => {
 
     // investment
@@ -70,4 +69,4 @@ setInterval(() => {
     // console.log(item)
 
 
-}, 6000);
+}, 10000);
