@@ -70,3 +70,12 @@ setInterval(() => {
 
 
 }, 10000);
+
+// map
+function showPosition(position) {
+    var latLon = position.coords.latitude + "," + position.coords.longitude;
+
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center=" + latLon + "&zoom=14&size=400x300&sensor=false";
+
+    document.querySelector(".map-con").innerHTML = "<img src='" + img_url + "'>";
+}
