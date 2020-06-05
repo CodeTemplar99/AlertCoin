@@ -13,7 +13,7 @@ overflow-x: hidden;
 
 
 .navbar{
-    background: black;
+    background:  black;
         border-bottom: 1px solid #ffc107;
         padding: 0px;
 }
@@ -505,6 +505,7 @@ font-size: 1000%;
 .talk-con-inner{
     background: transparent;
     margin:0px;
+    padding: 0px;
     width: 33%;
     display: flex;
     flex-direction: column;
@@ -549,12 +550,24 @@ margin:0px;
 }
 
 .inst-super .inst-cons{
-    width: 30%;
+    width: 20%;
     margin: 0;
+    padding: 10px;
 }
 
  .inst-cons small{
      font-size: 90%;
+}
+
+.options-con ul{
+    width: 70%;
+}
+
+
+.options-con ul li{
+    background: transparent;
+    border: 1px solid #ffc107;
+    margin-bottom: 15px;
 }
 
 #wallie{
@@ -663,7 +676,7 @@ label{
 .reg-s1{
     
     background-image: url("/images/5b1b0730a27fc006d1733708467527351.jpg") !important;
-    background-position: right;
+    background-position: center;
     background-size:100%;
     background-repeat: no-repeat;
         padding: 20px;
@@ -675,6 +688,15 @@ label{
         /* border-bottom: 1px solid lightgray; */
         background-size: 70%;
     }
+ .termsUL{
+     /* border:1px solid red; */
+     padding: 0px;
+ }
+
+    .termsUL li{
+        color:white;
+    }
+
 
 @media screen and (max-width:1024px){
 
@@ -897,6 +919,13 @@ margin:0px;
     color: black;
     text-shadow: 2px 1px 153px lightgray;
 }
+
+.s2-texts{
+    color: white;
+    font-size: 85%;
+    margin-bottom: -2px;
+}
+
 .flexers-text-con{
     text-align: center;
     width: 60%;
@@ -1072,8 +1101,6 @@ font-size: 800%;
     margin-bottom: 10px;
 }
 
-
-
 .work-flex{
     background: transparent;
     display: flex;
@@ -1119,6 +1146,7 @@ font-size: 800%;
 .talk-con-inner{
     background: transparent;
     margin:0px;
+    padding: 10px;
     width: 103%;
     display: flex;
     flex-direction: column;
