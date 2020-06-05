@@ -304,6 +304,12 @@ animation: shake 1.5s ease-out 0s infinite;
 font-size: 1000%;
 }
 
+.h-line{
+    padding: 0px;
+    height: 4px;
+    margin-bottom: 20px !important;
+    background: linear-gradient(to left, #ffc107, black);
+}
 
 /* invest */
 
@@ -323,12 +329,12 @@ font-size: 1000%;
     flex-direction: column;
     align-items: center;
 }
-
+/* 
 .invest-s1 hr{
     padding: 2px;
     width: 12vh;
     background: linear-gradient(to left, #3a2b8f,#5353d3, #17a0b3);
-}
+} */
 
 .invest-s1-title{
     color: black;
@@ -544,19 +550,31 @@ margin:0px;
     width: 80%;
     background: transparent;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
     padding: 10px;
 }
 
 .inst-super .inst-cons{
-    width: 20%;
-    margin: 0;
-    padding: 10px;
+    width: 50%;
+    /* margin: 0; */
+    padding: 20px;
 }
 
  .inst-cons small{
      font-size: 90%;
+}
+
+
+.inst-cons-accept{
+    width: 30%;
+    height:90px;
+    padding: 0px;
+    background-image: url("/images/IMG-20200605-WA0002.jpg") !important;
+    background-position:center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
 }
 
 .options-con ul{
