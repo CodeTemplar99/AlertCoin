@@ -1,6 +1,3 @@
-
-
-
 // side bar
 let isOpen = false;
 
@@ -71,11 +68,26 @@ setInterval(() => {
 
 }, 10000);
 
-// map
-function showPosition(position) {
-    var latLon = position.coords.latitude + "," + position.coords.longitude;
+// about faq
+// let lists = document.querySelectorAll(".list-group-item");
+// lists.forEach(function displayFaq() {
+//     addEventListener("click", () => {
 
-    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center=" + latLon + "&zoom=14&size=400x300&sensor=false";
+//         document.querySelector(".faq-texts").style.display = "block !important";
+//     })
 
-    document.querySelector(".map-con").innerHTML = "<img src='" + img_url + "'>";
-}
+// })
+
+// displayFaq()
+
+// for admin
+// document.getElementById("all_users_tab").addEventListener("click", () => {
+//     document.querySelector(".table-con").style.display = "block !important";
+//     console.log("hello");
+// })
+
+// user dash
+document.getElementById("new_invest_button").addEventListener("click", () => {
+    window.open("./investBoard.html")
+    // window.location("./investBoard.html")
+})

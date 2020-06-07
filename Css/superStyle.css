@@ -1,0 +1,90 @@
+body{
+background-color: black;
+margin: 0px;
+font-size: 100%;
+width: 100%;
+overflow-x: hidden;
+}
+
+.navbar{
+    background:  black;
+        border-bottom: 1px solid #ffc107;
+        padding: 0px;
+}
+
+.navbar-brand{
+    color: #a3a2a2 !important;
+    font-size: 200%;
+    position: relative;
+    left: 15vh;
+}   
+
+.navbar .fa-bitcoin{
+    color: #ffc107;
+    transform: rotate(0deg);
+    font-size: 80%;
+}
+.nav-link{
+    color: white !important;
+    font-size: 100%;
+    
+}
+.nav-link:hover{
+    color: #ffc107 !important;
+    
+}
+.nav-item{
+    min-width: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 1s;
+}
+
+.nav-item:hover{
+    border-radius: 4px;
+    border: 1px solid #ffc107;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: start;
+}
+
+.side-bar{
+    width: 3%;
+    height: 100vh;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    position: fixed;
+}
+
+.side-bar ul{
+    padding: 0px;
+}
+
+.side-bar ul li{
+    background: transparent !important;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.body-bar{
+    width: 97%;
+    height: 100vh;
+    border-left: 1px solid dimgray;
+    padding: 4px;
+    position: fixed;
+    left: 3%;
+    overflow-y: auto;
+}
+
+.table-con{
+    display: none;
+}
+
+iframe{
+    display: none;
+}
