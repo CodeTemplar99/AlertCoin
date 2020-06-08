@@ -81,13 +81,19 @@ setInterval(() => {
 // displayFaq()
 
 // for admin
-// document.getElementById("all_users_tab").addEventListener("click", () => {
-//     document.querySelector(".table-con").style.display = "block !important";
-//     console.log("hello");
-// })
+document.getElementById("users-tab").addEventListener("click", () => {
+    document.querySelector(".table-con").style.display = "block !important";
+    console.log("hello");
+})
+
+
+document.getElementById("new-users").addEventListener("click", () => {
+    document.querySelector(".table-con").style.display = "none !important";
+    console.log("what");
+})
 
 // user dash
 document.getElementById("new_invest_button").addEventListener("click", () => {
-    window.open("./investBoard.html")
+    window.location.href = "./investboard.html"
     // window.location("./investBoard.html")
 })

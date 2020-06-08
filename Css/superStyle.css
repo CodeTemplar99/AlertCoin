@@ -16,7 +16,7 @@ overflow-x: hidden;
     color: #a3a2a2 !important;
     font-size: 200%;
     position: relative;
-    left: 15vh;
+    left: 5vh;
 }   
 
 .navbar .fa-bitcoin{
@@ -77,14 +77,75 @@ overflow-x: hidden;
     border-left: 1px solid dimgray;
     padding: 4px;
     position: fixed;
-    left: 3%;
+    left: 6vh;
     overflow-y: auto;
 }
 
-.table-con{
+/* .table-con{
+    display: none;
+} */
+
+.edit-detail-con{
     display: none;
 }
 
-iframe{
+.web-mail-con{
     display: none;
 }
+
+
+@media screen and (max-width:768px){
+
+.side-bar{
+    width: 6%;
+}
+
+
+.body-bar{
+    width: 94%;
+    height: 100vh;
+    border-left: 1px solid dimgray;
+    padding: 4px;
+    left: 6.5vh;
+    overflow-y: auto;
+}
+
+}
+
+
+@media screen and (max-width:768px){
+
+.side-bar{
+    width: 42px;
+}
+
+.body-bar{
+    width: 94%;
+    left: 6vh;
+}
+
+}
+
+
+@media screen and (max-width:425px){
+.body-bar{
+    width: 91%;
+    left: 6vh;
+}
+}
+
+@media screen and (max-width:375px){
+.body-bar{
+    width: 90%;
+    left: 6vh;
+}
+}
+
+@media screen and (max-width:320px){
+.body-bar{
+    width: 89%;
+    left: 6vh;
+}
+}
+
+
