@@ -33,19 +33,19 @@
             <div class="jumbotron bg-transparent money-con m-0 p-3">
                 <div class="jumbotron cash-cons m-2">
                     <div class="title-con">
-                        <p class="text-white">TRADING AMOUNT</p>
+                        <p class="text-white">TOTAL INVESTMENT</p>
                     </div>
                     <P class="capital"><span><i class="fa fa-dollar-sign"></i></span>2,000</P>
                 </div>
                 <div class="jumbotron cash-cons m-2">
                     <div class="title-con">
-                        <p class="text-white">ROI</p>
+                        <p class="text-white">TOTAL INVESTED</p>
                     </div>
                     <P class="profit"><span><i class="fa fa-dollar-sign"></i></span>900</P>
                 </div>
                 <div class="jumbotron cash-cons m-2">
                     <div class="title-con">
-                        <p class="text-white">MY REFERRALS</p>
+                        <p class="text-white">TOTAL PROFIT</p>
                     </div>
                     <p class="profit">0</p>
                 </div>
@@ -64,7 +64,47 @@
                 <button class="btn rounded-pill invest-again" id="new_invest_button">New Investment</button>
             </div>
 
-            <div class="jumbotron bg-transparent mb-0 stat-con"></div>
+            <div class="jumbotron bg-transparent mb-0 stat-con">
+
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_4c658"></div>
+                    <div class="tradingview-widget-copyright"><a
+                            href="https://www.tradingview.com/symbols/COINBASE-BTCUSD/" rel="noopener"
+                            target="_blank"><span class="blue-text">BTCUSD Chart</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                        new TradingView.widget(
+                            {
+                                "width": 900,
+                                "height": 400,
+                                "symbol": "COINBASE:BTCUSD",
+                                "interval": "3",
+                                "timezone": "Etc/UTC",
+                                "theme": "dark",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": true,
+                                "container_id": "tradingview_4c658"
+                            }
+                        );
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+                <div class="jumbotron bg-transparent stat-list p-0">
+                    <ul class="list-group p-0 iv-breakdown">
+                        <li class="list-group-item active">INVESTMENT BREAKDOWN</li>
+                        <li class="list-group-item">Total investment</li>
+                        <li class="list-group-item">Total invested</li>
+                        <li class="list-group-item">Total profit</li>
+                        <li class="list-group-item">Referral bonus</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 

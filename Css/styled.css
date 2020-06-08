@@ -796,8 +796,8 @@ label{
     .cash-cons{
         background: transparent !important;
         border: 2px solid #ffc107;
-        width: 30vh;
-        /* padding: 20px; */
+        width: 40vh;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -853,12 +853,39 @@ label{
      }
 
      .stat-con{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
          width: 100%;
-         height: 31vh;
+         height: 50vh;
+         padding: 0px;
          margin: 0px;
          margin-top: 40px;
-         border: 1px solid #e7bb35;
+         /* border: 1px solid #e7bb35; */
      }
+
+.stat-list{
+    width: 70vh;
+}
+
+.tradingview-widget-container{
+    border: 1px solid red;
+}
+
+.iv-breakdown .active{
+    color: black;
+    background: #ffc107;
+    border: hidden;
+}
+
+
+.iv-breakdown li{
+    color: white;
+    background: black;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ffc107;
+    border-radius: 0px !important;
+}
 
 @media screen and (max-width:1024px){
 
@@ -1008,6 +1035,13 @@ margin:0px;
 
     .beware{
         width: 50%;
+    }
+
+    
+    .dash-btn-flex .btn{
+        width: auto;
+        height: auto;
+        margin: 30px 20px 0px 10px;
     }
 
 }
@@ -1178,6 +1212,71 @@ margin:0px;
         width: auto;
         height: auto;
     }
+
+
+    .money-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+    }
+
+    .cash-cons{
+        width: 90%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .dash-btn-flex{
+        width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .dash-btn-flex .btn{
+        width: auto;
+        height: auto;
+        margin: 30px 0px 0px 0px;
+    }
+
+     .stat-con{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 50vh;
+         padding: 0px;
+         margin: 0px;
+         margin-top: 40px;
+         /* border: 1px solid #e7bb35; */
+     }
+
+.stat-list{
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+
+.iv-breakdown{
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+
+.iv-breakdown li{
+    margin-bottom: 3px;
+    border-radius: 0px !important;
+}
 
 }
 
