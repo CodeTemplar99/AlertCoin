@@ -49,6 +49,8 @@ overflow-x: hidden;
 .container-fluid{
     display: flex;
     justify-content: start;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .side-bar{
@@ -58,6 +60,8 @@ overflow-x: hidden;
     padding: 0px;
     justify-content: center;
     position: fixed;
+    z-index: 2;
+    /* border-right: 1px solid red; */
 }
 
 .side-bar ul{
@@ -72,12 +76,11 @@ overflow-x: hidden;
 }
 
 .body-bar{
-    width:inherit;
+    width:100%;
     height: auto;
-    border-left: 1px solid dimgray;
     padding: 4px;
     position: relative;
-    left: 4.5vh;
+    left:6vh;
     overflow-y: auto;
 }
 
@@ -94,12 +97,17 @@ overflow-x: hidden;
 }
 
 
+@media screen and (max-width:1024px){
+.body-bar{
+    left: 4.6vh;
+}
+}
+
 @media screen and (max-width:768px){
 
 .side-bar{
     width: 6%;
 }
-
 
 .body-bar{
     left: 6.5vh;
@@ -107,39 +115,14 @@ overflow-x: hidden;
 
 }
 
-@media screen and (max-width:768px){
-    
-    .side-bar{
-        width: 42px;
-    }
-    
-.body-bar{
-    left: 5vh;
-}
-    
-}
 
-/* 
 
 @media screen and (max-width:425px){
-.body-bar{
-    width: 91%;
-    left: 6vh;
-}
-}
 
-@media screen and (max-width:375px){
-.body-bar{
-    width: 90%;
-    left: 6vh;
+    .side-bar{
+    width: 40px;
 }
+    .body-bar{
+        left: 5.7vh;
+    }
 }
-
-@media screen and (max-width:320px){
-.body-bar{
-    width: 89%;
-    left: 6vh;
-}
-}
-
- */
