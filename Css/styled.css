@@ -867,10 +867,10 @@ label{
 .stat-list{
     width: 70vh;
 }
-
+/* 
 .tradingview-widget-container{
     border: 1px solid red;
-}
+} */
 
 .iv-breakdown .active{
     color: black;
@@ -1044,6 +1044,13 @@ margin:0px;
         margin: 30px 20px 0px 10px;
     }
 
+
+    
+.tradingview-widget-container{
+    /* border: 1px solid red; */
+    width: 60vh;
+    overflow-x: auto;
+}
 }
 @media screen and (max-width:768px){
     .navbar-brand{
@@ -1252,7 +1259,7 @@ margin:0px;
      .stat-con{
          display: flex;
          flex-direction: column;
-         justify-content: center;
+         justify-content: space-between;
          align-items: center;
          width: 100%;
          height: 50vh;
@@ -1267,10 +1274,20 @@ margin:0px;
     /* border: 1px solid red; */
 }
 
+.stat-con{
+    padding: 0px !important;
+}
+    
+.tradingview-widget-container{
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+
 
 .iv-breakdown{
+    display: none;
     margin-top: 40px;
-    /* border: 1px solid red; */
 }
 
 .iv-breakdown li{

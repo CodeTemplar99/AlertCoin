@@ -68,32 +68,22 @@ setInterval(() => {
 
 }, 10000);
 
-// about faq
-// let lists = document.querySelectorAll(".list-group-item");
-// lists.forEach(function displayFaq() {
-//     addEventListener("click", () => {
 
-//         document.querySelector(".faq-texts").style.display = "block !important";
-//     })
+// user dash
+document.querySelector("#new_invest_button").addEventListener("click", () => {
+    window.location.href = "./investboard.html"
+})
 
-// })
 
-// displayFaq()
 
 // for admin
-document.getElementById("users-tab").addEventListener("click", () => {
+document.querySelector("#users-tab").addEventListener("click", () => {
     document.querySelector(".table-con").style.display = "block !important";
     console.log("hello");
 })
 
 
-document.getElementById("new-users").addEventListener("click", () => {
+document.querySelector("#new-users").addEventListener("click", () => {
     document.querySelector(".table-con").style.display = "none !important";
     console.log("what");
-})
-
-// user dash
-document.getElementById("new_invest_button").addEventListener("click", () => {
-    window.location.href = "./investboard.html"
-    // window.location("./investBoard.html")
 })
