@@ -72,12 +72,12 @@ overflow-x: hidden;
 }
 
 .body-bar{
-    width: 97%;
-    height: 100vh;
+    width:inherit;
+    height: auto;
     border-left: 1px solid dimgray;
     padding: 4px;
-    position: fixed;
-    left: 6vh;
+    position: relative;
+    left: 4.5vh;
     overflow-y: auto;
 }
 
@@ -102,30 +102,24 @@ overflow-x: hidden;
 
 
 .body-bar{
-    width: 94%;
-    height: 100vh;
-    border-left: 1px solid dimgray;
-    padding: 4px;
     left: 6.5vh;
-    overflow-y: auto;
 }
 
 }
-
 
 @media screen and (max-width:768px){
-
-.side-bar{
-    width: 42px;
-}
-
+    
+    .side-bar{
+        width: 42px;
+    }
+    
 .body-bar{
-    width: 94%;
-    left: 6vh;
+    left: 5vh;
+}
+    
 }
 
-}
-
+/* 
 
 @media screen and (max-width:425px){
 .body-bar{
@@ -148,4 +142,4 @@ overflow-x: hidden;
 }
 }
 
-
+ */
