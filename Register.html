@@ -12,6 +12,7 @@
     <link href="./Css/styled.css" rel="stylesheet" type="text/css">
     <script defer src="./js/dummy.js"></script>
     <script defer src="./js/spine.js"></script>
+    <script defer src="./js/Admin.js"></script>
 </head>
 
 <body>
@@ -65,7 +66,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="email">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="username">Username</label>
@@ -75,7 +76,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="password">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="password">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="confirmPassword">Confirm Password</label>
@@ -94,7 +95,7 @@
                     <input type="text" class="form-control" id="inputCountry" placeholder="country">
                 </div>
 
-                <button type="submit" class="btn btn-warning col-md-4">Submit</button>
+                <button type="submit" class="btn btn-warning col-md-4" id="signUpNow">Submit</button>
                 <p class="small text-warning mt-2">Do you have an account? <a href="./User_login.html">login here</a>
                 </p>
             </form>
@@ -114,6 +115,43 @@
         </p>
 
     </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB28gfSL2TF_fPheQVCcTrLDSH4R8jU2CE",
+            authDomain: "siteezenwankwo.firebaseapp.com",
+            databaseURL: "https://siteezenwankwo.firebaseio.com",
+            projectId: "siteezenwankwo",
+            storageBucket: "siteezenwankwo.appspot.com",
+            messagingSenderId: "415980951112",
+            appId: "1:415980951112:web:4b57b4f6abe4fb8e432a7d",
+            measurementId: "G-1MLXV39FDT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5ee14d389e5f69442290539d/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>
