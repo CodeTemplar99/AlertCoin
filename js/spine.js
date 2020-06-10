@@ -71,19 +71,5 @@ setInterval(() => {
 
 // user dash
 document.querySelector("#new_invest_button").addEventListener("click", () => {
-    window.location.href = "./investboard.html"
-})
-
-
-
-// for admin
-document.querySelector("#users-tab").addEventListener("click", () => {
-    document.querySelector(".table-con").style.display = "block !important";
-    console.log("hello");
-})
-
-
-document.querySelector("#new-users").addEventListener("click", () => {
-    document.querySelector(".table-con").style.display = "none !important";
-    console.log("what");
+    window.location.href = "./invest.html"
 })

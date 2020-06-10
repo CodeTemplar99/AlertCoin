@@ -326,8 +326,7 @@ font-size: 1000%;
 .invest-s1{
     /* border: 1px solid red; */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 /* 
 .invest-s1 hr{
@@ -335,6 +334,13 @@ font-size: 1000%;
     width: 12vh;
     background: linear-gradient(to left, #3a2b8f,#5353d3, #17a0b3);
 } */
+
+
+
+.invest-s1 form{
+    width: 45%;
+    /* border: 1px solid red !important; */
+}
 
 .invest-s1-title{
     color: black;
@@ -1113,6 +1119,7 @@ margin:0px;
 }
 
 
+
 .inner-title{
     text-align: center;
     font-size: 260%;
@@ -1293,6 +1300,12 @@ margin:0px;
 .iv-breakdown li{
     margin-bottom: 3px;
     border-radius: 0px !important;
+}
+
+
+.invest-s1 form{
+    width: 65%;
+    /* border: 1px solid red !important; */
 }
 
 }
@@ -1510,6 +1523,13 @@ margin:0px;
 
 .beware{
     width: 80%;
+}
+
+
+
+.invest-s1 form{
+    width: 90%;
+    /* border: 1px solid red !important; */
 }
 }
 

@@ -84,16 +84,13 @@ overflow-x: hidden;
     overflow-y: auto;
 }
 
-/* .table-con{
-    display: none;
-} */
-
-.edit-detail-con{
+#edit-detail-con{
     display: none;
 }
 
-.web-mail-con{
+#web-mail-con{
     display: none;
+    height: 100vh;
 }
 
 

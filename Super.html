@@ -10,8 +10,8 @@
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
     <link href="./Css/superStyle.css" rel="stylesheet" type="text/css">
-    <!-- <script defer src="./js/dummy.js"></script> -->
-    <script defer src="./js/spine.js"></script>
+    <script defer src="./js/Admin.js"></script>
+    <script defer src="./js/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <div class="container-fluid p-0">
         <div class="jumbotron side-bar rounded-0 m-0">
             <ul class="list-group">
-                <li class="list-group-item" id="admin-home"><i class="fa fa-home"></i></li>
+                <!-- <li class="list-group-item" id="admin-home"><i class="fa fa-home"></i></li> -->
                 <li class="list-group-item" id="users-tab"><i class="fa fa-user"></i></li>
                 <li class="list-group-item" id="new-users"><i class="fa fa-user-plus"></i></li>
                 <li class="list-group-item" id="edit-tab"><i class="fa fa-edit"></i></li>
@@ -34,7 +34,7 @@
             </ul>
         </div>
         <div class="jumbotron body-bar rounded-0 m-0">
-            <div class="table-con">
+            <div class=" views" id="table-con">
                 <table class="table table-striped table-bordered">
                     <caption>List of users</caption>
                     <thead class="thead-dark">
@@ -75,7 +75,7 @@
 
             </div>
 
-            <div class="edit-detail-con">
+            <div class=" views" id="edit-detail-con">
                 <div class="jumbotron">
                     <form>
                         <div class="form-group">
@@ -106,11 +106,11 @@
                 </div>
             </div>
 
-            <div class="web-mail-con">
-                <iframe src="https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html"
+            <div class="views" id="web-mail-con">
+                <!-- <iframe src="https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html"
                     title="iframe example 1" width="100%" height="100%">
                     <p>Your browser does not support iframes.</p>
-                </iframe>
+                </iframe> -->
             </div>
         </div>
 

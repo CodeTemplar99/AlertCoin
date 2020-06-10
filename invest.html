@@ -56,81 +56,31 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid p-5">
-        <div class="s2-trade">
-            <p class="s2-texts text-center"> We are Trading every minute
-            </p>
-            <hr>
-            <p class="s2-title text-center"> Hourly making <span class="strip">Money</span></p>
+    <div class="container p-0">
 
-        </div>
         <div class="jumbotron mb-0 invest-s1-super bg-transparent rounded-0">
             <div class="invest-s1">
-                <div class="jumbotron work-flex">
-                    <div class="jumbotron work-flex-cons shadow-sm bg-white">
-                        <div class="icon-base rounded-sm">
-                            <i class=" fab fa-bitcoin"></i>
-                        </div>
-                        <p class="work-flex-percent">50%</p>
-                        <p class="work-flex-title">STARTER</p>
-                        <p class="text-center work-flex-text mt-2">
-                            16 HOURS<br>
-                            Minimum Deposit: $50<br>
+                <form>
 
-                            Maximum Deposit: $1000
-                        </p>
-                        <a href="./investboard.html"><button
-                                class="btn btn-warning mb-4 font-weight-bold">Deposit</button>
-                        </a>
-                    </div>
-                    <div class="jumbotron work-flex-cons shadow-sm bg-white">
-                        <div class="icon-base rounded-sm">
-                            <i class=" fab fa-bitcoin"></i>
-                        </div>
-                        <p class="work-flex-percent">100%</p>
-                        <p class="work-flex-title">BASIC</p>
-                        <p class="text-center work-flex-text mt-2">
-                            24 HOURS<br>
-                            Minimum Deposit: $100<br>
-
-                            Maximum Deposit: $3,000</p>
-                        <a href="./investboard.html"><button
-                                class="btn btn-warning mb-4 font-weight-bold">Deposit</button>
-                        </a>
-                    </div>
-                    <div class="jumbotron work-flex-cons shadow-sm bg-white">
-                        <div class="icon-base rounded-sm">
-                            <i class=" fab fa-bitcoin"></i>
-                        </div>
-                        <p class="work-flex-percent">200%</p>
-                        <p class="work-flex-title">STANDARD</p>
-                        <p class="text-center work-flex-text mt-2">
-                            48 HOURS<br>
-                            Minimum Deposit: $500<br>
-
-                            Maximum Deposit: $10,000
-                        </p>
-                        <a href="./investboard.html"><button
-                                class="btn btn-warning mb-4 font-weight-bold">Deposit</button>
-                        </a>
-                    </div>
-                    <div class="jumbotron work-flex-cons shadow-sm bg-white">
-                        <div class="icon-base rounded-sm">
-                            <i class=" fab fa-bitcoin"></i>
-                        </div>
-                        <p class="work-flex-percent">300%</p>
-                        <p class="work-flex-title">PREMIUM</p>
-                        <p class="text-center work-flex-text mt-2">
-                            82 HOURS<br>
-                            Minimum Deposit: $900<br>
-
-                            Maximum Deposit: $20,000</p>
-                        <a href="./investboard.html"><button
-                                class="btn btn-warning mb-4 font-weight-bold">Deposit</button>
-                        </a>
+                    <div class="form-group">
+                        <label for="inputState">Choose Plan</label>
+                        <select class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
                     </div>
 
-                </div>
+                    <div class="form-group">
+                        <label for="inputState">Capital in USD</label>
+                        <input class="form-control" placeholder="Capital in USD">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputState">Bitcoin Equivalent</label>
+                        <input readonly class="form-control" value="30">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning">Proceed To Buy</button>
+                </form>
             </div>
         </div>
 
