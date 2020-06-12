@@ -10,9 +10,6 @@
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
     <link href="./Css/styled.css" rel="stylesheet" type="text/css">
-    <script defer src="./js/dummy.js"></script>
-    <script defer src="./js/spine.js"></script>
-    <script defer src="./js/Admin.js"></script>
 </head>
 
 <body>
@@ -60,7 +57,7 @@
     </nav>
     <div class="container">
         <div class="jumbotron bg-transparent mb-4 rounded-0 m-0 reg-s1">
-            <form>
+            <form id="signUp-form">
                 <P class="lead text-warning text-capitalize font-weight-bolder">Fill up the form to Register on
                     Coinverse now</P>
                 <div class="form-row">
@@ -116,29 +113,8 @@
 
     </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyB28gfSL2TF_fPheQVCcTrLDSH4R8jU2CE",
-            authDomain: "siteezenwankwo.firebaseapp.com",
-            databaseURL: "https://siteezenwankwo.firebaseio.com",
-            projectId: "siteezenwankwo",
-            storageBucket: "siteezenwankwo.appspot.com",
-            messagingSenderId: "415980951112",
-            appId: "1:415980951112:web:4b57b4f6abe4fb8e432a7d",
-            measurementId: "G-1MLXV39FDT"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -152,6 +128,43 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script> -->
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBx1c2vwlPYkOu99F8p8XcO5qposclkFSE",
+            authDomain: "alertthing-81032.firebaseapp.com",
+            databaseURL: "https://alertthing-81032.firebaseio.com",
+            projectId: "alertthing-81032",
+            // storageBucket: "alertthing-81032.appspot.com",
+            // messagingSenderId: "227528832212",
+            // appId: "1:227528832212:web:ec2a7ebfbdcc8b1277f741",
+            // measurementId: "G-W2EX4QG532"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+
+        // make auth and firebase references
+        const auth = firebase.auth();
+        // const db = firebase.firestore();
+    </script>
+    <script defer src="./js/spine.js"></script>
+    <script defer src="./js/Auth.js"></script>
 </body>
 
 </html>
