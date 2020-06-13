@@ -73,3 +73,8 @@ setInterval(() => {
 document.querySelector("#new_invest_button").addEventListener("click", () => {
     window.location.href = "./invest.html"
 })
+
+
+document.querySelector("#get_invest_button").addEventListener("click", () => {
+    window.location.href = "./investboard.html"
+})
