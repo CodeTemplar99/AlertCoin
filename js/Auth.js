@@ -26,6 +26,26 @@ SignUpForm.addEventListener('submit', (e) => {
         // sign up user
         auth.createUserWithEmailAndPassword(email, password).then(cred => {
             console.log(cred)
+
+            if (auth.createUserWithEmailAndPassword(email, password)) {
+                window.location.href = "./user_login.html";
+            }
+
+            else {
+                console.log("account not created")
+            }
         })
+
+        // var user = firebase.auth().currentUser;
+
+        // user.sendEmailVerification().then(function () {
+        //     // Email sent.
+        // }).catch(function (error) {
+        //     // An error happened.
+        // });
+
+
     }
+
+
 })
