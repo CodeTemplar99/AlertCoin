@@ -32,7 +32,6 @@ SignUpForm.addEventListener('submit', (e) => {
         auth.createUserWithEmailAndPassword(email, password).then(cred => {
             console.log(cred)
             alert("you have successfully signed up");
-
             function addUsersToFirestore() {
                 var users = {
                     username: username,
@@ -43,13 +42,11 @@ SignUpForm.addEventListener('submit', (e) => {
                 const db = firebase.firestore();
                 db.collection("users").doc().set(users);
             }
-
             addUsersToFirestore();
 
             if (auth.createUserWithEmailAndPassword(email, password)) {
-                window.location.href = "./user_login.html";
+                window.location.href = "./user_login.html"
             }
-
             else {
 
                 alert("Sign up not successful try again")

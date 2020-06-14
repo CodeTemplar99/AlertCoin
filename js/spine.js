@@ -90,14 +90,13 @@ $("select")
     })
     .change();
 
+document.querySelector("#plan-a").addEventListener('click', () => {
+    console.log("plan A");
+})
+
 // const ivForm = document.querySelector("#invest-form");
 // ivForm.addEventListener('submit', (e) => {
 //     e.preventDefault();
 
-//     var i = 0;
-//     for (; i < 9; i++) {
-//         console.log(i);
-//         // more statements
-//     }
 
 // })

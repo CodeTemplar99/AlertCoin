@@ -43,10 +43,10 @@ loginForm.addEventListener('submit', (e) => {
                 alert("Log in Successful")
                 if (user) {
                     // console.log(cred)
-                    window.location.href = "./dashboard.html"
+                    window.location.href = "./dashboard.html";
                 } else {
 
-                    window.location.href = "./user_login.html"
+                    window.location.href = "./user_login.html";
                 }
             });
         })
