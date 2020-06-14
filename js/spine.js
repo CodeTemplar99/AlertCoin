@@ -78,6 +78,10 @@ function openWithdrawPage() {
     window.location.href = "./withdraw.html"
 }
 
+function proceedToBuy() {
+    window.location.href = "./investboard.html"
+}
+
 // invest page
 
 $("select")
