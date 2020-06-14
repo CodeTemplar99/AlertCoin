@@ -23,9 +23,17 @@
     </nav>
 
     <div class="container-fluid dash-con">
-        <div class="dummy-everything"><span class="lead dummy-name"></span>
-            <i class="fa fa-user-circle dp-dummy"></i>
+
+        <div class="dummy-everything">
+            <div><span class="lead dummy-name"></span>
+                <i class="fa fa-user-circle dp-dummy"></i>
+            </div>
+            <div><span class="lead dummy-mail"></span>
+                <i class="fa fa-envelope dp-dummy"></i>
+            </div>
         </div>
+
+
 
         <div class="jumbotron bg-transparent info-con m-0">
 
@@ -59,8 +67,9 @@
                 group chats or more
                 than one website.</p>
             <div class="dash-btn-flex">
-                <button class="btn btn-warning withdraw" id="get_invest_button">Withdraw Investment</button>
-                <button class="btn rounded-pill invest-again" id="new_invest_button">New Investment</button>
+                <button class="btn btn-warning withdraw" id="get_invest_button" onclick="openWithdrawPage()">Withdraw
+                    Investment</button>
+                <button class="btn rounded-pill invest-again" id="new_invest_button" onclick="openNewInvestmentPage()">New Investment</button>
             </div>
 
             <div class="jumbotron bg-transparent mb-0 stat-con">

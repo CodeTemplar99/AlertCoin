@@ -747,24 +747,26 @@ label{
 
 .dummy-everything{
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     padding: 10px;
 }
 
-.dummy-name{
+.dummy-name, .dummy-mail{
     color: #ffc107;
-    font-weight: bold;
+    font-weight:normal;
     background-color: black;
-    padding: 0px 5px 0px 5px;
+    padding: 5px;
+    margin: 0px !important;
     border-radius: 4px 16px 16px 4px;
 }
     
     .dp-dummy{
         color: white;
-        font-size: 160%;
-        margin-left: 0vh;
+        font-size: 100%;
+        margin: 0;
     }
 
     .dash-con{
@@ -859,7 +861,7 @@ label{
      }
 
      .stat-con{
-         display: flex;
+         display: none !important;
          justify-content: space-between;
          align-items: center;
          width: 100%;
@@ -891,6 +893,10 @@ label{
     margin-bottom: 3px;
     border-bottom: 1px solid #ffc107;
     border-radius: 0px !important;
+}
+
+.table-sm{
+    color: #ffc107;
 }
 
 @media screen and (max-width:1024px){

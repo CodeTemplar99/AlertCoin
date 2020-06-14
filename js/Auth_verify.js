@@ -5,16 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         else {
             var user = firebase.auth().currentUser;
-            // var name, email, photoUrl, uid, emailVerified;
-
-            // name = user.displayName;
-            console.log(user.email);
-            // photoUrl = user.photoURL;
-            // emailVerified = user.emailVerified;
-            console.log(user.uid);  // The user's ID, unique to the Firebase project. Do NOT use
-            // this value to authenticate with your backend server, if
-            // you have one. Use User.getToken() instead.
-            document.querySelector(".dummy-name").innerHTML = user.email;
+            const db = firebase.firestore();
+            db.collection("users")
+                .get()
+                .then(snap => {
+                    snap.forEach(doc => {
+                        console.log(doc.data());
+                        console.log(doc.id);
+                    });
+                });
+            document.querySelector(".dummy-name").innerHTML = user.user;
+            document.querySelector(".dummy-mail").innerHTML = user.email;
         }
     });
 

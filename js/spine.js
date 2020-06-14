@@ -3,7 +3,7 @@ let isOpen = false;
 
 function showSideBar() {
     document.querySelector('#navbarSupportedContent').style.display = isOpen ? "none" : "block"
-    isOpen = !isOpen
+    isOpen = !isOpen;
 
 }
 
@@ -70,11 +70,34 @@ setInterval(() => {
 
 
 // user dash
-document.querySelector("#new_invest_button").addEventListener("click", () => {
+function openNewInvestmentPage() {
     window.location.href = "./invest.html"
-})
+}
 
+function openWithdrawPage() {
+    window.location.href = "./withdraw.html"
+}
 
-document.querySelector("#get_invest_button").addEventListener("click", () => {
-    window.location.href = "./investboard.html"
-})
+// invest page
+
+$("select")
+    .change(function () {
+        var str = "";
+        $("select option:selected").each(function () {
+            str += $(this).text() + " ";
+        });
+        console.log(str);
+    })
+    .change();
+
+// const ivForm = document.querySelector("#invest-form");
+// ivForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+//     var i = 0;
+//     for (; i < 9; i++) {
+//         console.log(i);
+//         // more statements
+//     }
+
+// })
