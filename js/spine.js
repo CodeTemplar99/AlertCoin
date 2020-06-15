@@ -84,23 +84,34 @@ function proceedToBuy() {
 
 // invest page
 
-$("select")
-    .change(function () {
-        var str = "";
-        $("select option:selected").each(function () {
-            str += $(this).text() + " ";
-        });
-        console.log(str);
-    })
-    .change();
+$("select").change(function (e) {
+    console.log(e.target.value)
+}).change();
 
-document.querySelector("#plan-a").addEventListener('click', () => {
-    console.log("plan A");
+
+
+
+const investWay = document.querySelector("#investForm");
+investWay.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const capValue = investWay['inputCapital'].value;
+
+
+    if (capValue !== "") {
+        console.log(capValue);
+        // update investment
+        function planToFirestore() {
+            var investPlan = {
+                amount: capValue
+            };
+            const db = firebase.firestore();
+            db.collection("invest").doc().set(investPlan);
+        }
+        planToFirestore()
+
+        if (db.collection("invest").doc().set(investPlan)) {
+            console.log("hello")
+        }
+    }
+
 })
-
-// const ivForm = document.querySelector("#invest-form");
-// ivForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-
-
-// })

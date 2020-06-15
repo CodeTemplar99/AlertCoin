@@ -86,7 +86,7 @@
                     <tbody>
                         <tr>
                             <th scope="row">Minimum</th>
-                            <td>$50</td>
+                            <td>$25</td>
                             <td>$500</td>
                             <td>$1,700</td>
                             <td>$2,700</td>
@@ -104,29 +104,30 @@
             </div>
             <div class="invest-s1">
 
-                <form id="invest-form">
+                <form id="investForm">
 
                     <div class="form-group">
                         <label for="inputState">Choose Plan</label>
                         <select class="form-control selector">
-                            <option selected>Choose...</option>
-                            <option id="plan-a">STARTER Plan $25 - $500 (20%)</option>
-                            <option id=" plan-b">BASIC Plan $500 - $1,500 (20%)</option>
-                            <option id="plan-c">STANDARD Plan $1,700 - $10,000 (20%)</option>
-                            <option id="plan-d">PREMIUM Plan $2,700 - $30,000 (20%)</option>
+                            <option class="select-option" selected>Choose your investment plan</option>
+                            <option class="select-option" id="plan-a">STARTER $25 - $500 (20%)</option>
+                            <option class="select-option" id=" plan-b">BASIC $500 - $1,500 (25%)</option>
+                            <option class="select-option" id="plan-c">STANDARD $1,700 - $10,000 (50%)</option>
+                            <option class="select-option" id="plan-d">PREMIUM $2,700 - $30,000 (100%)</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="inputState">Capital in USD</label>
-                        <input class="form-control" placeholder="Capital in USD">
+                        <input type="number" min="25" max="100000000000" class="form-control" id="inputCapital"
+                            placeholder="Capital in USD">
                     </div>
                     <!-- <div class="form-group">
                         <label for="inputState">Bitcoin Equivalent</label>
                         <input readonly class="form-control" value="30">
                     </div> -->
                     <div class="form-group">
-                        <button type="submit" class="btn btn-warning" onclick="proceedToBuy()">Proceed</button>
+                        <button type="submit" class="btn btn-warning">Proceed</button>
                 </form>
             </div>
         </div>
