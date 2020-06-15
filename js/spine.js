@@ -104,14 +104,52 @@ investWay.addEventListener('submit', (e) => {
             var investPlan = {
                 amount: capValue
             };
+
             const db = firebase.firestore();
             db.collection("invest").doc().set(investPlan);
+            if (db.collection("invest").doc().set(investPlan)) {
+                console.log("hello")
+            }
+            setTimeout(() => {
+                window.location.href = "./investboard.html"
+
+            }, 3000);
         }
         planToFirestore()
 
-        if (db.collection("invest").doc().set(investPlan)) {
-            console.log("hello")
+
+    }
+
+})
+
+
+const withdrawWay = document.querySelector("#withdrawForm");
+withdrawWay.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const walletHash = withdrawWay['finalWallet'].value;
+
+
+    if (walletHash !== "") {
+        console.log(walletHash);
+        // update investment
+        function withdrawToFirestore() {
+            var tryWithdraw = {
+                userWallet: walletHash
+            };
+
+            const db = firebase.firestore();
+            db.collection("withdrawals").doc().set(withdrawals);
+            if (db.collection("invest").doc().set(tryWithdraw)) {
+                console.log("hello")
+            }
+            setTimeout(() => {
+                window.location.href = "./dashboard.html"
+
+            }, 3000);
         }
+        withdrawToFirestore()
+
+
     }
 
 })

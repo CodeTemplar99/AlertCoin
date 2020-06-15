@@ -30,7 +30,6 @@ SignUpForm.addEventListener('submit', (e) => {
 
         // sign up user
         auth.createUserWithEmailAndPassword(email, password).then(cred => {
-            console.log(cred)
             function addUsersToFirestore() {
                 var users = {
                     username: username,
@@ -45,13 +44,18 @@ SignUpForm.addEventListener('submit', (e) => {
 
             if (auth.createUserWithEmailAndPassword(email, password)) {
 
+                console.log(cred)
                 alert("you have successfully signed up");
-                window.location.href = "./user_login.html"
+
+                setTimeout(() => {
+                    window.location.href = "./user_login.html"
+
+                }, 3000);
+
             }
             else {
 
                 alert("Sign up not successful try again")
-                console.log("account not created")
             }
         })
         // send email on sign up
