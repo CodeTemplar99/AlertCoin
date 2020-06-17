@@ -20,15 +20,19 @@ document.addEventListener("DOMContentLoaded", () => {
             //         // }
             //     );
 
-            db.collection('users').doc(user.uid)
+            db.collection('users').doc()
                 .get()
                 .then(doc => {
                     // if (doc.exists) {
-                    doc.data();
-                    console.log(doc.id)
-                    console.log(doc.data().wallet)
+                    let hello = doc.data();
+                    // console.log(hello.id)
                     // }
+                    console.log(hello)
+                    console.log(doc.data())
                 })
+
+
+            // console.log(hello.id)
 
             document.querySelector(".dummy-name").innerHTML = user.user;
             document.querySelector(".dummy-mail").innerHTML = user.email;

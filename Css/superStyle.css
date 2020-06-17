@@ -84,9 +84,18 @@ overflow-x: hidden;
     overflow-y: auto;
 }
 
+
+#table-new-con{
+    display: none;
+}
+
 #edit-detail-con{
     display: none;
 }
+#withdraw-con{
+    display: none;
+}
+
 
 #web-mail-con{
     display: none;
