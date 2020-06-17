@@ -11,6 +11,7 @@
     <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
     <link href="./Css/styled.css" rel="stylesheet" type="text/css">
     <!-- <script defer src="./js/dummy.js"></script> -->
+    <script defer src="./js/jquery-3.4.1.min.js"></script>
     <script defer src="./js/spine.js"></script>
 </head>
 
@@ -110,156 +111,210 @@
                     <p class="lead text-center text-white m-0 about-lead">-FAQs-</p>
                 </div>
                 <ul class="list-group rounded-0">
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="what-is-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">What is Bitcoin?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="what-is-answer">
+                            Bitcoin is a consensus network that enables a new payment system and a completely digital
+                            money. It is the first
+                            decentralized peer-to-peer payment network that is powered by its users with no central
+                            authority or middlemen. From a
+                            user perspective, Bitcoin is pretty much like cash for the Internet. Bitcoin can also be
+                            seen as the most prominent
+                            triple entry bookkeeping system in existence.
+                        </p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="who-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">Who created Bitcoin?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="who-answer">Bitcoin is the first implementation of a concept called
+                            "cryptocurrency", which was first described in 1998 by Wei Dai
+                            on the cypherpunks mailing list, suggesting the idea of a new form of money that uses
+                            cryptography to control its
+                            creation and transactions, rather than a central authority. The first Bitcoin specification
+                            and proof of concept was
+                            published in 2009 in a cryptography mailing list by Satoshi Nakamoto. Satoshi left the
+                            project in late 2010 without
+                            revealing much about himself. The community has since grown exponentially with many
+                            developers working on Bitcoin.
+
+                            Satoshi's anonymity often raised unjustified concerns, many of which are linked to
+                            misunderstanding of the open-source
+                            nature of Bitcoin. The Bitcoin protocol and software are published openly and any developer
+                            around the world can review
+                            the code or make their own modified version of the Bitcoin software. Just like current
+                            developers, Satoshi's influence
+                            was limited to the changes he made being adopted by others and therefore he did not control
+                            Bitcoin. As such, the
+                            identity of Bitcoin's inventor is probably as relevant today as the identity of the person
+                            who invented paper.
+                        </p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="how-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">How does Bitcoin work?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="how-answer">From a user perspective, Bitcoin is nothing more than a
+                            mobile app or computer program that provides a personal Bitcoin
+                            wallet and allows a user to send and receive bitcoins with them. This is how Bitcoin works
+                            for most users.
+
+                            Behind the scenes, the Bitcoin network is sharing a public ledger called the "block chain".
+                            This ledger contains every
+                            transaction ever processed, allowing a user's computer to verify the validity of each
+                            transaction. The authenticity of
+                            each transaction is protected by digital signatures corresponding to the sending addresses,
+                            allowing all users to have
+                            full control over sending bitcoins from their own Bitcoin addresses. In addition, anyone can
+                            process transactions using
+                            the computing power of specialized hardware and earn a reward in bitcoins for this service.
+                            This is often called
+                            "mining". To learn more about Bitcoin, you can consult the dedicated page and the original
+                            paper.</p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="difficult-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">How difficult is it to make a Bitcoin payment?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="difficult-answer">Bitcoin payments are easier to make than debit or
+                            credit card purchases, and can be received without a merchant account.
+                            Payments are made from a wallet application, either on your computer or smartphone, by
+                            entering the recipient's address,
+                            the payment amount, and pressing send. To make it easier to enter a recipient's address,
+                            many wallets can obtain the
+                            address by scanning a QR code or touching two phones together with NFC technology.</p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="legal-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">Is Bitcoin legal?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="legal-answer">To the best of our knowledge, Bitcoin has not been made
+                            illegal by legislation in most jurisdictions. However, some
+                            jurisdictions (such as Argentina and Russia) severely restrict or ban foreign currencies.
+                            Other jurisdictions (such as
+                            Thailand) may limit the licensing of certain entities such as Bitcoin exchanges.
+
+                            Regulators from various jurisdictions are taking steps to provide individuals and businesses
+                            with rules on how to
+                            integrate this new technology with the formal, regulated financial system. For example, the
+                            Financial Crimes Enforcement
+                            Network (FinCEN), a bureau in the United States Treasury Department, issued non-binding
+                            guidance on how it characterizes
+                            certain activities involving virtual currencies.</p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="what-about-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">What about Bitcoin and consumer protection?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="what-about-answer">Bitcoin is freeing people to transact on their own
+                            terms. Each user can send and receive payments in a similar way to
+                            cash but they can also take part in more complex contracts. Multiple signatures allow a
+                            transaction to be accepted by
+                            the network only if a certain number of a defined group of persons agree to sign the
+                            transaction. This allows innovative
+                            dispute mediation services to be developed in the future. Such services could allow a third
+                            party to approve or reject a
+                            transaction in case of disagreement between the other parties without having control on
+                            their money. As opposed to cash
+                            and other payment methods, Bitcoin always leaves a public proof that a transaction did take
+                            place, which can potentially
+                            be used in a recourse against businesses with fraudulent practices.
+
+                            It is also worth noting that while merchants usually depend on their public reputation to
+                            remain in business and pay
+                            their employees, they don't have access to the same level of information when dealing with
+                            new consumers. The way
+                            Bitcoin works allows both individuals and businesses to be protected against fraudulent
+                            chargebacks while giving the
+                            choice to the consumer to ask for more protection when they are not willing to trust a
+                            particular merchant.</p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="determine-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">What determines bitcoin’s price?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="determine-answer">The price of a bitcoin is determined by supply and
+                            demand. When demand for bitcoins increases, the price increases, and
+                            when demand falls, the price falls. There is only a limited number of bitcoins in
+                            circulation and new bitcoins are
+                            created at a predictable and decreasing rate, which means that demand must follow this level
+                            of inflation to keep the
+                            price stable. Because Bitcoin is still a relatively small market compared to what it could
+                            be, it doesn't take
+                            significant amounts of money to move the market price up or down, and thus the price of a
+                            bitcoin is still very
+                            volatile.</p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="is-ponzi-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">Is Bitcoin a Ponzi scheme?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="is-ponzi-answer">A Ponzi scheme is a fraudulent investment operation
+                            that pays returns to its investors from their own money, or the
+                            money paid by subsequent investors, instead of from profit earned by the individuals running
+                            the business. Ponzi schemes
+                            are designed to collapse at the expense of the last investors when there is not enough new
+                            participants.
+
+                            Bitcoin is a free software project with no central authority. Consequently, no one is in a
+                            position to make fraudulent
+                            representations about investment returns. Like other major currencies such as gold, United
+                            States dollar, euro, yen,
+                            etc. there is no guaranteed purchasing power and the exchange rate floats freely. This leads
+                            to volatility where owners
+                            of bitcoins can unpredictably make or lose money. Beyond speculation, Bitcoin is also a
+                            payment system with useful and
+                            competitive attributes that are being used by thousands of users and businesses.</p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="why-wait-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">Why do I have to wait for confirmation?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="why-wait-answer">Receiving notification of a payment is almost instant
+                            with Bitcoin. However, there is a delay before the network begins
+                            to confirm your transaction by including it in a block. A confirmation means that there is a
+                            consensus on the network
+                            that the bitcoins you received haven't been sent to anyone else and are considered your
+                            property. Once your transaction
+                            has been included in one block, it will continue to be buried under every block after it,
+                            which will exponentially
+                            consolidate this consensus and decrease the risk of a reversed transaction. Each
+                            confirmation takes between a few
+                            seconds and 90 minutes, with 10 minutes being the average. If the transaction pays too low a
+                            fee or is otherwise
+                            atypical, getting the first confirmation can take much longer. Every user is free to
+                            determine at what point they
+                            consider a transaction sufficiently confirmed, but 6 confirmations is often considered to be
+                            as safe as waiting 6 months
+                            on a credit card transaction.</p>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item about-li" id="receive-li">
                         <div class="list-row-1">
                             <p class="m-0 mb-2 font-weight-bold">What if I receive a bitcoin when my computer is powered
                                 off?</p>
                             <i class="fa fa-eye"></i>
                         </div>
-                        <p class="faq-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio
-                            animi officiis minus atque maxime quidem velit, earum nesciunt veniam et similique
-                            laudantium. Numquam vero expedita ad temporibus molestias. Fugit obcaecati quis neque
-                            temporibus voluptates, minima deleniti, nisi corrupti architecto autem accusamus quisquam.
-                            Debitis, ipsam voluptate. Earum modi amet, dolores reprehenderit ducimus ullam, alias
-                            perspiciatis, labore officia quae vero doloribus ipsum excepturi? Nesciunt beatae odio
-                            consectetur odit maiores ab quisquam iste optio porro ducimus perferendis non enim alias
-                            dolorem, nobis veniam maxime corrupti modi molestiae est, accusantium repellat numquam unde
-                            et! Tenetur eaque quos, corrupti veniam libero temporibus molestiae quidem!</p>
+                        <p class="faq-texts" id="receive-answer">This works fine. The bitcoins will appear next time you
+                            start your wallet application. Bitcoins are not actually
+                            received by the software on your computer, they are appended to a public ledger that is
+                            shared between all the devices
+                            on the network. If you are sent bitcoins when your wallet client program is not running and
+                            you later launch it, it will
+                            download blocks and catch up with any transactions it did not already know about, and the
+                            bitcoins will eventually
+                            appear as if they were just received in real time. Your wallet is only needed when you wish
+                            to spend bitcoins.</p>
                     </li>
                 </ul>
             </div>
@@ -271,25 +326,25 @@
                 <div class="hrr-5 hidden-xs"></div>
             </center>
 
-            <p class="text-center small text-secondary">©2016 - 2020 Coiniverse<br>
-                Coiniverse is a registered trademark of Coiniverse.
+            <p class="text-center small text-secondary">©2016 - 2020 Coinverse<br>
+                Coinverse is a registered trademark of Coinverse.
             </p>
 
         </div>
     </div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/5ee14d389e5f69442290539d/default';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
-<!--End of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5ee14d389e5f69442290539d/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>

@@ -7,6 +7,57 @@ function showSideBar() {
 
 }
 
+
+// about
+$("#what-is-li").click(() => {
+    $(".faq-texts").not("#what-is-answer").hide()
+    $("#what-is-answer").show()
+});
+
+$("#who-li").click(() => {
+    $(".faq-texts").not("#who-answer").hide()
+    $("#who-answer").show()
+});
+
+$("#how-li").click(() => {
+    $(".faq-texts").not("#how-answer").hide()
+    $("#how-answer").show()
+});
+
+$("#difficult-li").click(() => {
+    $(".faq-texts").not("#difficult-answer").hide()
+    $("#difficult-answer").show()
+});
+
+$("#legal-li").click(() => {
+    $(".faq-texts").not("#legal-answer").hide()
+    $("#legal-answer").show()
+});
+
+$("#what-about-li").click(() => {
+    $(".faq-texts").not("#what-about-answer").hide()
+    $("#what-about-answer").show()
+});
+
+$("#determine-li").click(() => {
+    $(".faq-texts").not("#determine-answer").hide()
+    $("#determine-answer").show()
+});
+
+$("#is-ponzi-li").click(() => {
+    $(".faq-texts").not("#is-ponzi-answer").hide()
+    $("#is-ponzi-answer").show()
+});
+$("#why-wait-li").click(() => {
+    $(".faq-texts").not("#why-wait-answer").hide()
+    $("#why-wait-answer").show()
+});
+$("#receive-li").click(() => {
+    $(".faq-texts").not("#receive-answer").hide()
+    $("#receive-answer").show()
+});
+
+
 setInterval(() => {
 
     // investment

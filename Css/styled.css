@@ -1023,9 +1023,10 @@ margin:0px;
     padding: 0px;
 }
 
-.inst-super .inst-cons{
-    width: 30%;
-    margin: 0;
+
+.inst-cons{
+    width: 60% !important;
+    margin-bottom: 20px !important;
 }
 
  .inst-cons small{
@@ -1228,6 +1229,10 @@ margin:0px;
 
 
 
+.inst-cons{
+    width: 60% !important;
+    margin-bottom: 20px !important;
+}
     .dash-btn-flex .btn{
         width: auto;
         height: auto;
@@ -1478,7 +1483,7 @@ margin:0px;
 }
 
 .inst-super .inst-cons{
-    width: 85%;
+    width: 95% !important;
     margin-bottom: 20px;
 }
 
