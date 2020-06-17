@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     // if (doc.exists) {
                     doc.data();
                     console.log(doc.id)
-                    console.log(doc.wallet)
+                    console.log(doc.data().wallet)
                     // }
                 })
 
