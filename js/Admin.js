@@ -27,20 +27,20 @@ document.querySelector("#withdraw-tab").addEventListener("click", () => {
 })
 
 // for web mail
-document.querySelector("#mail_tab").addEventListener("click", () => {
-    $(".views").not("#web-mail-con").hide();
-    $("#web-mail-con").css("display", "block")
-    function RealMailView() {
-        // var superLevel = $("#web-mail-con")
-        var l1 = document.createElement("iframe");
-        var attributes = ["src", "title", "width", "height"];
-        var attValues = ["https:www.google.com", "iframe", "100%", "100%"];
+// document.querySelector("#mail_tab").addEventListener("click", () => {
+//     $(".views").not("#web-mail-con").hide();
+//     $("#web-mail-con").css("display", "block")
+//     function RealMailView() {
+//         // var superLevel = $("#web-mail-con")
+//         var l1 = document.createElement("iframe");
+//         var attributes = ["src", "title", "width", "height"];
+//         var attValues = ["https:www.google.com", "iframe", "100%", "100%"];
 
-        for (var i = 0; i < attributes.length; i++) {
-            l1.setAttribute(attributes[i], attValues[i])
-        }
-        document.querySelector("#web-mail-con").appendChild(l1);
-    }
-    RealMailView()
-    console.log("web mail");
-})
+//         for (var i = 0; i < attributes.length; i++) {
+//             l1.setAttribute(attributes[i], attValues[i])
+//         }
+//         document.querySelector("#web-mail-con").appendChild(l1);
+//     }
+//     RealMailView()
+//     console.log("web mail");
+// })
