@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
             //         });
             //     });
 
+            let userDocId = firebase.auth().currentUser.uid;
             db.collection("users")
-                .doc(user.uid)
+                .doc(userDocId)
                 .get()
                 .then(doc => {
                     // console.log(doc.data())
