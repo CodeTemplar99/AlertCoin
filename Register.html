@@ -57,7 +57,7 @@
     </nav>
     <div class="container">
         <div class="jumbotron bg-transparent mb-4 rounded-0 m-0 reg-s1">
-            <form id="signUp-form">
+            <form id="signUp-form" action="" method="POST">
                 <P class="lead text-warning text-capitalize font-weight-bolder">Fill up the form to Register on
                     Coinverse now</P>
                 <div class="form-row">
@@ -93,7 +93,7 @@
                     <input type="text" class="form-control" id="inputCountry" placeholder="country">
                 </div>
 
-                <button type="submit" class="btn btn-warning col-md-4" id="signUpNow">Submit</button>
+                <button type="submit" class="btn btn-warning col-md-4" id="signUpNow" onsubmit=sendRegister()>Submit</button>
                 <p class="small text-warning mt-2">Do you have an account? <a href="./User_login.html">login here</a>
                 </p>
             </form>
@@ -134,23 +134,25 @@
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>  
 
     <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
 
     <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script> 
+    <script src="./js/firebase.js"></script>
 
 
-    <script>
+    <!-- <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "AIzaSyBx1c2vwlPYkOu99F8p8XcO5qposclkFSE",
-            authDomain: "alertthing-81032.firebaseapp.com",
-            databaseURL: "https://alertthing-81032.firebaseio.com",
-            projectId: "alertthing-81032",
+            apiKey: "AIzaSyBLWg1TEltttb3pHRM52ghNAAvraadGKaU",
+            authDomain: "coinapp-cd164.firebaseapp.com",
+            databaseURL: "https://coinapp-cd164.firebaseio.com",
+            projectId: "coinapp-cd164",
             // storageBucket: "alertthing-81032.appspot.com",
             // messagingSenderId: "227528832212",
             // appId: "1:227528832212:web:ec2a7ebfbdcc8b1277f741",
@@ -163,9 +165,10 @@
         // make auth and firebase references
         const auth = firebase.auth();
         const db = firebase.firestore();
-    </script>
-    <script defer src="./js/spine.js"></script>
-    <script defer src="./js/Auth.js"></script>
+
+    </script>  -->
+    <!-- <script defer src="./js/spine.js"></script> -->
+   <script defer src="./js/Auth.js"></script>
 </body>
 
 </html>
