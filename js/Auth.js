@@ -12,7 +12,7 @@ function formData(e) {
 
     //send message values
     createNewAccount(email,username,password,walletID,country);
-  
+
 }
 
 //Send Message to Firebase(2)
@@ -22,9 +22,11 @@ function createNewAccount(email,username,password,walletID,country) {
             username: username,
             walletID: walletID,
             country: country,
+            email: email,
+            dateJoined:data.user.metadata.creationTime,
         }
         let userId = data.user.uid
-        console.log(userId)
+        console.log(data.user.metadata.creationTime)
           writeUserData(account,userId)
         }).catch(function(error) {
           var errorCode = error.code;
@@ -34,9 +36,11 @@ function createNewAccount(email,username,password,walletID,country) {
 }
   function writeUserData(account,user) {
     try {
-      firebase.database().ref('usersaa/' + user).set(account);
-      // window.location.href = "../dashboard.html",true;
+      firebase.database().ref('users/' + user).set(account).then(function (){
+              window.location.href = "../Dashboard.html",true;
       console.log('profile created')
+      })
+
     }catch(error)  {
         console.log(error.message)
     };

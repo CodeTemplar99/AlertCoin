@@ -188,39 +188,19 @@
     <!--End of Tawk.to Script-->
 
 
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+       <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>  
 
     <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
 
     <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
-
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBx1c2vwlPYkOu99F8p8XcO5qposclkFSE",
-            authDomain: "alertthing-81032.firebaseapp.com",
-            databaseURL: "https://alertthing-81032.firebaseio.com",
-            projectId: "alertthing-81032",
-            // storageBucket: "alertthing-81032.appspot.com",
-            // messagingSenderId: "227528832212",
-            // appId: "1:227528832212:web:ec2a7ebfbdcc8b1277f741",
-            // measurementId: "G-W2EX4QG532"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        // firebase.analytics();
-
-        // make auth and firebase references
-        const auth = firebase.auth();
-                // const db = firebase.firestore();
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script> 
+    <script src="./js/firebase.js"></script>
     <script defer src="./js/spine.js"></script>
 </body>
 

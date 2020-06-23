@@ -10,7 +10,7 @@
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
     <link href="./Css/superStyle.css" rel="stylesheet" type="text/css">
-    <script defer src="./js/Admin.js"></script>
+
     <script defer src="./js/jquery-3.4.1.min.js"></script>
 </head>
 
@@ -51,7 +51,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <!-- <tr>
                             <th scope="row">1</th>
                             <td></td>
                             <td></td>
@@ -68,7 +68,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                        </tr>
+                        </tr> -->
 
                     </tbody>
                 </table>
@@ -111,22 +111,22 @@
 
             <div class=" views" id="edit-detail-con">
                 <div class="jumbotron">
-                    <form>
+                    <form id="client-profit-form" >
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Client ID</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                            <input type="text" class="form-control" id="ClientId"
                                 placeholder="enter id from users' Id column">
                         </div>
 
 
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Client Total investment</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                            <input type="number" class="form-control" id="totalInvestment"
                                 placeholder="e.g 3000">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Client Profit</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                            <input type="number" class="form-control" id="totalProfit"
                                 placeholder="e.g 3000">
                         </div>
                         <!--
@@ -185,6 +185,20 @@
 
 
     </div>
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>  
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script> 
+    <script src="./js/firebase.js"></script>
+    <script defer src="./js/Admin.js"></script>
 </body>
 
 </html>

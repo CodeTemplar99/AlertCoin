@@ -19,19 +19,19 @@ loginForm.addEventListener('submit', (e) => {
     // get user info
     const email = loginForm['regMail'].value;
     const password = loginForm['password'].value;
-    // var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    // if (email !== "" && email.match(mailFormat)) {
-    //     console.log("match and not empty");
-    // }
-    // else {
+    if (email !== "" && email.match(mailFormat)) {
+        console.log("match and not empty");
+    }
+    else {
 
-    //     console.log("email is empty");
-    // }
+        console.log("email is empty");
+    }
 
-    // if (password == "") {
-    //     console.log("password is empty");
-    // }
+    if (password == "") {
+        console.log("password is empty");
+    }
 
     if (email !== "" && password !== "") {
         console.log("email and password not empty");
@@ -44,10 +44,10 @@ loginForm.addEventListener('submit', (e) => {
                 alert("Log in Successful")
                 if (user) {
                     // console.log(cred)
-                    window.location.href = "./dashboard.html";
+                    window.location.href = "../Dashboard.html";
                 } else {
 
-                    window.location.href = "./user_login.html";
+                    window.location.href = "../User_login.html";
                 }
             });
         })
