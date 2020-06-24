@@ -46,19 +46,19 @@ document.querySelector("#withdraw-tab").addEventListener("click", () => {
 // })
 
 
-        /**Fetch all user  Home Icon 1*/
-        var tbody = document.querySelector('tbody');
-        // var trs = tbody.querySelectorAll('tr');
-        // trs.forEach( function(tr){
-        //     var td = tr.querySelectorAll('td');
-        //     console.log(td);
-        // });
-        var i = 1;
-var database = firebase.database().ref('users').on('value', function(snapshot) {
-    snapshot.forEach(function(childSnapshot) {
-      var childData = childSnapshot.val();
-      console.log(childData);
-      
+/**Fetch all user  Home Icon 1*/
+var tbody = document.querySelector('tbody');
+// var trs = tbody.querySelectorAll('tr');
+// trs.forEach( function(tr){
+//     var td = tr.querySelectorAll('td');
+//     console.log(td);
+// });
+var i = 1;
+var database = firebase.database().ref('users').on('value', function (snapshot) {
+    snapshot.forEach(function (childSnapshot) {
+        var childData = childSnapshot.val();
+        console.log(childData);
+
         var tr = document.createElement('tr');
         let th = document.createElement('th');
         let text = document.createTextNode(i);
@@ -81,89 +81,90 @@ var database = firebase.database().ref('users').on('value', function(snapshot) {
     });
 });
 
-        /**Fetch new user Details User plus icon 2*/
+/**Fetch new user Details User plus icon 2*/
 
-        var database = firebase.database().ref('users').on('value', function(snapshot) {
-            snapshot.forEach(function(childSnapshot) {
-              var childData = childSnapshot.val();
+var database = firebase.database().ref('users').on('value', function (snapshot) {
+    snapshot.forEach(function (childSnapshot) {
+        var childData = childSnapshot.val();
+        //   console.log(childData)
+    });
+});
+
+
+/**Add Client profit and Investment  This should add/update investment table3a*/
+
+document.getElementById("client-profit-form").addEventListener("submit", clientData);
+
+function clientData(e) {
+    e.preventDefault();
+
+    let clientID = document.querySelector('#ClientId').value;
+    let totalInvestment = document.querySelector('#totalInvestment').value;
+    let totalProfit = document.querySelector('#totalProfit').value;
+    //send message values
+    var investment = {
+        clientID: clientID,
+        totalInvestment: totalInvestment,
+        totalProfit: totalProfit
+    }
+
+    try {
+        firebase.database().ref('Investments/' + clientID).set(investment).then(function () {
+            console.log('investment created')
+            document.getElementById("client-profit-form").reset()
+        })
+
+    } catch (error) {
+        console.log(error.message)
+    };
+
+}
+/**Fetch profit on login client on dashboard page 3b*/
+
+var database = firebase.database().ref('Investments/' + ClientId).on('value', function (snapshot) {
+    snapshot.forEach(function (childSnapshot) {
+        var childData = childSnapshot.val();
+        //   console.log(childData)
+    });
+});
+
+
+/**Client can click Withdraw Investment(this post to withdraws table) A*/
+
+
+document.getElementById("client-profit-form").addEventListener("submit", clientData);
+
+function clientData(e) {
+    e.preventDefault();
+
+    let clientID = document.querySelector('#ClientId').value;
+    let totalInvestment = document.querySelector('#totalInvestment').value;
+    let totalProfit = document.querySelector('#totalProfit').value;
+    //send message values
+    var investment = {
+        clientID: clientID,
+        totalInvestment: totalInvestment,
+        totalProfit: totalProfit
+    }
+
+    try {
+        firebase.database().ref('Investments/' + clientID).set(investment).then(function () {
+            console.log('investment created')
+            document.getElementById("client-profit-form").reset()
+        })
+
+    } catch (error) {
+        console.log(error.message)
+    };
+
+
+
+    /**Fetch client that seek to withdraw data and paste on the dollar view B*/
+
+    var database = firebase.database().ref('Withdraw/' + ClientId).on('value', function (snapshot) {
+        snapshot.forEach(function (childSnapshot) {
+            var childData = childSnapshot.val();
             //   console.log(childData)
-            });
         });
-
-
-            /**Add Client profit and Investment  This should add/update investment table3a*/
-                   
-            document.getElementById("client-profit-form").addEventListener("submit", clientData);
-
-            function clientData(e) {
-                e.preventDefault();
-
-                let clientID = document.querySelector('#ClientId').value;
-                let totalInvestment = document.querySelector('#totalInvestment').value;
-                let totalProfit = document.querySelector('#totalProfit').value;
-                //send message values
-                var investment = {
-                    clientID : clientID,
-                    totalInvestment : totalInvestment,
-                    totalProfit : totalProfit
-                }
-
-                try {
-                    firebase.database().ref('Invesments/' + clientID).set(investment).then(function (){
-                    console.log('investment created')
-                    document.getElementById("client-profit-form").reset()
-                    })
-            
-                }catch(error)  {
-                    console.log(error.message)
-                };
-
-            }
-            /**Fetch profit on login client on dashboard page 3b*/
-
-        var database = firebase.database().ref('Investmens/'+ClientId).on('value', function(snapshot) {
-            snapshot.forEach(function(childSnapshot) {
-              var childData = childSnapshot.val();
-            //   console.log(childData)
-            });
-        });
-
-
-            /**Client can click Withdraw Investment(this post to withdraws table) A*/
-
-
-            document.getElementById("client-profit-form").addEventListener("submit", clientData);
-
-            function clientData(e) {
-                e.preventDefault();
-
-                let clientID = document.querySelector('#ClientId').value;
-                let totalInvestment = document.querySelector('#totalInvestment').value;
-                let totalProfit = document.querySelector('#totalProfit').value;
-                //send message values
-                var investment = {
-                    clientID : clientID,
-                    totalInvestment : totalInvestment,
-                    totalProfit : totalProfit
-                }
-
-                try {
-                    firebase.database().ref('Invesments/' + clientID).set(investment).then(function (){
-                    console.log('investment created')
-                    document.getElementById("client-profit-form").reset()
-                    })
-            
-                }catch(error)  {
-                    console.log(error.message)
-                };
-
-1
-
-            /**Fetch client that seek to withdraw data and paste on the dollar view B*/
-
-            var database = firebase.database().ref('Withdraw/'+ClientId).on('value', function(snapshot) {
-            snapshot.forEach(function(childSnapshot) {
-              var childData = childSnapshot.val();
-            //   console.log(childData)
-            });
-        });
+    });
+}
