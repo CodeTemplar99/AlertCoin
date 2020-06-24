@@ -40,6 +40,8 @@ loginForm.addEventListener('submit', (e) => {
         // sign in user
         firebase.auth().signInWithEmailAndPassword(email, password).then(cred => {
             // console.log(cred)
+
+            alert("Log in Successful")
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user) {
                     // console.log(cred)
