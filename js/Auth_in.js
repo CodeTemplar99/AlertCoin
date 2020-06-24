@@ -41,9 +41,9 @@ loginForm.addEventListener('submit', (e) => {
         firebase.auth().signInWithEmailAndPassword(email, password).then(cred => {
             // console.log(cred)
             firebase.auth().onAuthStateChanged(function (user) {
-                alert("Log in Successful")
                 if (user) {
                     // console.log(cred)
+                    alert("Log in Successful")
                     window.location.href = "../Dashboard.html";
                 } else {
 
