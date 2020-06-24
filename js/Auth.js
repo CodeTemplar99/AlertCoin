@@ -1,47 +1,48 @@
-        //Listern to the form and get the data 1& 1.2
+//Listern to the form and get the data 1& 1.2
 document.getElementById("signUp-form").addEventListener("submit", formData);
 
 function formData(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    let email = document.querySelector('#inputEmail').value;
-    let username = document.querySelector('#username').value;
-    let password = document.querySelector('#inputPassword').value;
-    let walletID = document.querySelector('#inputAddress').value;
-    let country = document.querySelector('#inputCountry').value;
+  let email = document.querySelector('#inputEmail').value;
+  let username = document.querySelector('#username').value;
+  let password = document.querySelector('#inputPassword').value;
+  let walletID = document.querySelector('#inputAddress').value;
+  let country = document.querySelector('#inputCountry').value;
 
-    //send message values
-    createNewAccount(email,username,password,walletID,country);
+  //send message values
+  createNewAccount(email, username, password, walletID, country);
 
 }
 
 //Send Message to Firebase(2)
-function createNewAccount(email,username,password,walletID,country) {
-    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(data){
-        var account = {
-            username: username,
-            walletID: walletID,
-            country: country,
-            email: email,
-            dateJoined:data.user.metadata.creationTime,
-        }
-        let userId = data.user.uid
-        console.log(data.user.metadata.creationTime)
-          writeUserData(account,userId)
-        }).catch(function(error) {
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          console.log(errorMessage);
-        });
+function createNewAccount(email, username, password, walletID, country) {
+  firebase.auth().createUserWithEmailAndPassword(email, password).then(function (data) {
+    var account = {
+      username: username,
+      walletID: walletID,
+      country: country,
+      email: email,
+      dateJoined: data.user.metadata.creationTime,
+    }
+    let userId = data.user.uid
+    console.log(data.user.metadata.creationTime)
+    writeUserData(account, userId)
+  }).catch(function (error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorMessage);
+  });
 }
-  function writeUserData(account,user) {
-    try {
-      firebase.database().ref('users/' + user).set(account).then(function (){
-              window.location.href = "../Dashboard.html",true;
-      console.log('profile created')
-      })
+function writeUserData(account, user) {
+  try {
+    firebase.database().ref('users/' + user).set(account).then(function () {
+      alert("Sign up successful")
+      window.location.href = "../user_login.html", true;
+      // console.log('profile created')
+    })
 
-    }catch(error)  {
-        console.log(error.message)
-    };
+  } catch (error) {
+    console.log(error.message)
+  };
 }

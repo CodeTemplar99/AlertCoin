@@ -768,6 +768,21 @@ label{
         margin: 0;
     }
 
+    .hour-read{
+        font-size: 300%;
+        font-weight: bold;
+    }
+
+    .minute-read{
+        font-size: 250%;
+        font-weight: bold;
+    }
+
+    .seconds-read{
+        font-size: 200%;
+        font-weight: bold;
+    }
+
     .dash-con{
 /*         
     background-image: url("/images/5b1b0730a27fc006d1733708467527351.jpg") !important;
@@ -1541,6 +1556,19 @@ margin:0px;
     width: 90%;
     /* border: 1px solid red !important; */
 }
+
+
+    .hour-read{
+        font-size: 200%;
+    }
+
+    .minute-read{
+        font-size: 150%;
+    }
+
+    .seconds-read{
+        font-size: 100%;
+    }
 }
 
 @media screen and (max-width:375px){
@@ -1610,4 +1638,22 @@ font-size: 600%;
     width: 100%;
     height: auto;
 }
+
+
+    .hour-read{
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    .minute-read{
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    .seconds-read{
+        font-size: 100%;
+        font-weight: normal;
+    }
 }
+
+
