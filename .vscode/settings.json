@@ -7,5 +7,24 @@
         "investboard",
         "unreals"
     ],
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#2e2c3b",
+        "titleBar.activeBackground": "#17161e",
+        "titleBar.activeForeground": "#e7e7e7",
+        "activityBar.activeBackground": "#2e2c3b",
+        "activityBar.activeBorder": "#a74738",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#a74738",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#17161e",
+        "statusBar.border": "#17161e",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#2e2c3b",
+        "titleBar.border": "#17161e",
+        "titleBar.inactiveBackground": "#17161e99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#17161e"
 }

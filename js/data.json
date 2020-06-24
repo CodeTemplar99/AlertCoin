@@ -1,0 +1,24 @@
+{
+    "users":{
+        "user1":{
+            "username":"john",
+            "full_name":"John Vincent",
+            "created_at":"9th Feb 2015",
+            "groups":{
+                "group1":true,
+                "group3":true
+            }
+            },
+        "user2":{
+                "username":"john",
+                "full_name":"John Vincent",
+                "created_at":"9th Feb 2015",
+                "groups":{
+                    "group1":true,
+                    "group3":true
+                }
+            }
+        }
+}
+  
+  
